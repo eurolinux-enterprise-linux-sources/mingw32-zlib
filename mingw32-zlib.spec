@@ -6,7 +6,7 @@
 
 Name:           mingw32-zlib
 Version:        1.2.3
-Release:        20%{?dist}
+Release:        21%{?dist}
 Summary:        MinGW Windows zlib compression library
 
 License:        zlib
@@ -135,6 +135,10 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Adjusted version and rebuild using gcc 4.4.6
+  Related: rhbz#722878
+
 * Thu Feb  3 2011 Andrew Beekhof <abeekhof@redhat.com> - 1.2.3-20
 - Import 1.2.3 from Fedora
    Related: rhbz#658833
